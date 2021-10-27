@@ -35,7 +35,7 @@ CREATE TABLE users(
 	login VARCHAR,
 	username VARCHAR,
 	password VARCHAR,
-    token_required VARCHAR
+    	token_required VARCHAR
 )
 ```
 
