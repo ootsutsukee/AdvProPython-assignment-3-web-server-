@@ -12,14 +12,14 @@ class User(db.Model):
     username = db.Column(db.String())
 
     password = db.Column(db.String())
-    token = db.Column(db.String())
+    token_required = db.Column(db.String())
 
     def serialize(self):
         return {
             'id': self.id,
             'login': self.login,
             'username': self.username,
-            'token': self.token
+            'token_required': self.token_required
         }
 
     pass
